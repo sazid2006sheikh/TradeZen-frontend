@@ -83,7 +83,7 @@ const styles = `
     font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: -0.03em;
-    color: var(--accent);
+    // color: var(--accent);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -92,7 +92,6 @@ const styles = `
   .login-brand-logo {
     width: 32px;
     height: 32px;
-    background: var(--accent);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -481,34 +480,17 @@ export default function Login() {
           {/* Background dot-grid texture */}
           <div className="login-grid-deco" />
 
-          {/* ── LOGO & BRAND NAME ─────────────────────────────────
-              TODO: LOGO — Replace the placeholder below with your
-              actual logo. Two options:
-              
-              Option A – Image logo:
-                <img src="/logo.png" alt="Your Brand" style={{ height: 32 }} />
-              
-              Option B – SVG logo:
-                <YourLogoComponent />
-              
-              Then replace "Vortex." with your brand name,
-              or remove the text if your logo already has it.
-          ─────────────────────────────────────────────────────── */}
           <div className="login-brand">
             <div className="login-brand-logo">
-              {/* TODO: LOGO — swap this placeholder square with your <img> or <svg> logo */}
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="#0a0a0f">
-                <path d="M9 1L1 5v8l8 4 8-4V5L9 1z"/>
-              </svg>
+              <img src="./media/images/tradezen_icon.png" alt="logo" style={{ height: 23  }} />
             </div>
-            {/* TODO: BRAND NAME — replace "Vortex." with your brand name */}
-            Vortex.
+            TradeZen.
           </div>
 
           {/* ── TAGLINE + SUBTEXT ── */}
           <div style={{ zIndex: 1 }}>
             <h2 className="login-tagline">
-              Welcome<br />back to<br /><span>greatness.</span>
+              Welcome<br />back to<br /><span>Real World.</span>
             </h2>
             <p className="login-tagline-sub">
               Pick up right where you left off. Your work, your team, your momentum — all waiting.
@@ -587,7 +569,7 @@ export default function Login() {
                 <input
                   id="login-email"
                   type="email"
-                  placeholder="jane@company.com"
+                  placeholder="sazid@company.com"
                   value={fields.email}
                   onChange={set("email")}
                   className={errors.email ? "error-input" : ""}
