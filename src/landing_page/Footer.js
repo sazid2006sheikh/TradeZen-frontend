@@ -7,7 +7,7 @@ function Footer() {
                 <div className='row'>
                     <div className='col'>
                         <img src='media/images/logo.svg' alt='logo' style={{width:'50%'}} />
-                        <p> © 2025 TradeZen Ltd.<br/> Made by 𝕾𝖆𝖟𝖎𝖉 𝕾𝖍𝖊𝖎𝖐𝖍 ❤.<br/>All rights reserved.</p>
+                        <p> © 2025 TradeZen Ltd.<br/>All rights reserved.</p>
                     </div>
                     <div className='col' style={{lineHeight:'30px'}}>
                         <p >Company</p>
