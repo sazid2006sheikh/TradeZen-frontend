@@ -83,7 +83,6 @@ const styles = `
     font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: -0.03em;
-    // color: var(--accent);
     display: flex;
     align-items: center;
     gap: 10px;
