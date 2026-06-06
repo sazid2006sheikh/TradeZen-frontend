@@ -26,15 +26,16 @@ function Navbar() {
 
 
       <nav
-        className="navbar navbar-expand-lg fixed-top"
+        className="navbar navbar-expand-md fixed-top"
         style={{
           background:"rgba(255,255,255,.9)",
           backdropFilter:"blur(15px)",
-          boxShadow:"0 5px 25px rgba(0,0,0,.08)"
+          boxShadow:"0 5px 25px rgba(0,0,0,.08)",
+          height:"60px"
         }}
       >
 
-        <div className="container p-2">
+        <div className="container p-1">
 
 
           <Link className="navbar-brand" to="/">

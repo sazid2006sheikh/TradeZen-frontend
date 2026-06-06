@@ -8,7 +8,7 @@ function Team() {
             </div>
             <div className='row border-top ' style={{lineHeight: '1.8',backgroundColor: '#1b2631'}}>
                 <div className='col-6 text-center p-4 pb-2 '>
-                    <img src='media/images/sazidsheikh.png'alt='Sazid Sheikh' style={{borderRadius:'100%',width:'80%'}}></img>
+                    <img src='media/images/sazidsheikh.png' alt='Sazid Sheikh' style={{borderRadius:'100%',width:'80%'}}></img>
                     <h4 className='mt-3' style={{color:'white'}}>Sazid Sheikh</h4>
                     <h5 style={{color:'#AFB1B4',fontSize:'15px'}}>Founder, CEO</h5>
                 </div>
@@ -31,7 +31,7 @@ function Team() {
             </div>
             <div className='row' style={{lineHeight: '1.8',backgroundColor: '#1b2631', color: '#AFB1B4'}}>
                 <div className="col-md-4 mb-4 mt-5 text-center">
-                    <img style={{ borderRadius: "100%", width: '70%' }} src="media/images/example.jpg" />
+                    <img style={{ borderRadius: "100%", width: '70%' }} src="media/images/example.jpg" alt="Dr Stark" />
                     <div className="mt-4">
                         <h3 className="text-m font-bold"  style={{color:'white'}}>Dr Stark</h3>
                         <p>Co-Founder</p>
@@ -39,7 +39,7 @@ function Team() {
                 </div>
 
                 <div className="col-md-4 mb-4 mt-5 text-center">
-                    <img style={{ borderRadius: "100%", width: '70%' }} src="media/images/example.jpg" />
+                    <img style={{ borderRadius: "100%", width: '70%' }} src="media/images/example.jpg" alt="Dr Wattson" />
                     <div className="mt-4">
                         <h3 className="text-xl font-bold" style={{color: 'white'}}>Dr Wattson</h3>
                         <p>CTO</p>
@@ -47,7 +47,7 @@ function Team() {
                 </div>
 
                 <div className="col-md-4 mb-4 mt-5 text-center">
-                    <img style={{ borderRadius: "100%", width: '70%' }} src="media/images/example.jpg" />
+                    <img style={{ borderRadius: "100%", width: '70%' }} src="media/images/example.jpg" alt="Joy Neo" />
                     <div className="mt-4">
                         <h3 className="text-xl font-bold" style={{color: 'white'}}>Joy Neo</h3>
                         <p>COO</p>
@@ -55,7 +55,7 @@ function Team() {
                 </div>
 
                 <div className="col-md-4 mb-4 mt-5 text-center">
-                    <img style={{ borderRadius: "100%", width: '70%' }} src="media/images/example.jpg" />
+                    <img style={{ borderRadius: "100%", width: '70%' }} src="media/images/example.jpg" alt="Sachin Kohli" />
                     <div className="mt-4">
                         <h3 className="text-xl font-bold" style={{color: 'white'}}>Sachin Kohli</h3>
                         <p>CCO</p>
@@ -63,7 +63,7 @@ function Team() {
                 </div>
                 <div className=" col-md-4 mb-4 mt-5 text-center">
                 <img
-                    style={{borderRadius: "100%",width:'70%'}} src="media/images/example.jpg" />
+                    style={{borderRadius: "100%",width:'70%'}} src="media/images/example.jpg" alt="Nikhil Choudhary" />
                     <div className="mt-4 ">
                         <h3 className="text-xl font-bold" style={{color: 'white'}}>Nikhil choudhary</h3>
                         <p>Director</p>
@@ -72,7 +72,7 @@ function Team() {
                 </div>
                 <div className="col-md-4 mb-4 mt-5 text-center">
                 <img
-                    style={{borderRadius: "100%",width:'70%'}} src="media/images/example.jpg" />
+                    style={{borderRadius: "100%",width:'70%'}} src="media/images/example.jpg" alt="Ankit K." />
                     <div className="mt-4 ">
                         <h3 className="text-xl font-bold" style={{color: 'white'}}>Ankit K.</h3>
                         <p>Chief of Education</p>

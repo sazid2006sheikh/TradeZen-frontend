@@ -11,41 +11,41 @@ function Footer() {
                     </div>
                     <div className='col' style={{lineHeight:'30px'}}>
                         <p >Company</p>
-                        <a href='' style={{ textDecoration: 'none', color:'dimgray' }}>About</a>
+                        <a href='/about' style={{ textDecoration: 'none', color:'dimgray' }}>About</a>
                         <br />
-                        <a href=''  style={{ textDecoration: 'none', color:'dimgray' }}>Products</a>
+                        <a href='/products'  style={{ textDecoration: 'none', color:'dimgray' }}>Products</a>
                         <br />
-                        <a href='' style={{ textDecoration: 'none', color:'dimgray' }}>Pricing</a>
+                        <a href='/pricing' style={{ textDecoration: 'none', color:'dimgray' }}>Pricing</a>
                         <br />
-                        <a href='' style={{ textDecoration: 'none', color:'dimgray' }}>Awards</a>
+                        <a href='/awards' style={{ textDecoration: 'none', color:'dimgray' }}>Awards</a>
                         <br />
-                        <a href='' style={{ textDecoration: 'none', color:'dimgray'}}>Education</a>
+                        <a href='/education' style={{ textDecoration: 'none', color:'dimgray'}}>Education</a>
                         <br />
-                        <a href='' style={{ textDecoration: 'none', color:'dimgray' }}>TradeZen.tech</a>
+                        <a href='/tradezen-tech' style={{ textDecoration: 'none', color:'dimgray' }}>TradeZen.tech</a>
                         <br />
-                        <a href=''style={{ textDecoration: 'none', color:'dimgray' }}>Statistics</a>
+                        <a href='/statistics'style={{ textDecoration: 'none', color:'dimgray' }}>Statistics</a>
                     </div>
 
                     <div className='col' style={{lineHeight:'30px'}}>
                         <p>Support</p>
-                        <a href='' className='text-muted' style={{ textDecoration: 'none' }}>Contact</a>
+                        <a href='/contact' className='text-muted' style={{ textDecoration: 'none' }}>Contact</a>
                         <br/>
-                        <a href='' className='text-muted' style={{ textDecoration: 'none' }}>Support portal</a>
+                        <a href='/support-portal' className='text-muted' style={{ textDecoration: 'none' }}>Support portal</a>
                         <br/>
-                        <a href='' className='text-muted' style={{ textDecoration: 'none' }}>Zen-Connect blog</a>
+                        <a href='/zen-connect-blog' className='text-muted' style={{ textDecoration: 'none' }}>Zen-Connect blog</a>
                         <br/>
-                        <a href='' className='text-muted' style={{ textDecoration: 'none' }}>List of charges</a>
+                        <a href='/list-of-charges' className='text-muted' style={{ textDecoration: 'none' }}>List of charges</a>
                         <br/>
-                        <a href='' className='text-muted' style={{ textDecoration: 'none' }}>Downloads & resources</a>
+                        <a href='/downloads-resources' className='text-muted' style={{ textDecoration: 'none' }}>Downloads & resources</a>
                         <br/>
                     </div>
                     <div className='col' style={{lineHeight:'30px'}}>
                         <p>Account</p>
-                        <a href='' className='text-muted' style={{ textDecoration: 'none' }}>Open an account</a>
+                        <a href='/open-an-account' className='text-muted' style={{ textDecoration: 'none' }}>Open an account</a>
                         <br/>
-                        <a href='' className='text-muted' style={{ textDecoration: 'none' }} >Fund transfer</a>
+                        <a href='/fund-transfer' className='text-muted' style={{ textDecoration: 'none' }} >Fund transfer</a>
                         <br/>
-                        <a href='' className='text-muted' style={{ textDecoration: 'none' }}>45 day challenge</a>
+                        <a href='/45-day-challenge' className='text-muted' style={{ textDecoration: 'none' }}>45 day challenge</a>
                         <br/>
                     </div>
                 </div>
@@ -71,13 +71,13 @@ function Footer() {
             <div className="d-flex justify-content-center align-items-center bg-light border-top py-2 px-4 position-relative">
                 <p className="mb-0 text-muted">Made with ❤️ by Sazid Sheikh</p>
                 <div className="position-absolute end-0 d-flex gap-4 fs-5">
-                    <a href="https://www.linkedin.com/in/sazid-sheikh-258714283/" target="_blank" className="text-dark social-icon">
+                    <a href="https://www.linkedin.com/in/sazid-sheikh-258714283/" rel="noopener noreferrer" target="_blank" className="text-dark social-icon">
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                     </a>
-                    <a href="https://github.com/sazid2006sheikh/" target="_blank" className="text-dark social-icon">
+                    <a href="https://github.com/sazid2006sheikh/" rel="noopener noreferrer" target="_blank" className="text-dark social-icon">
                     <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.instagram.com/yoursazidd/" target="_blank" className="text-dark social-icon">
+                    <a href="https://www.instagram.com/yoursazidd/" rel="noopener noreferrer" target="_blank" className="text-dark social-icon">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
