@@ -10,37 +10,92 @@ const [search,setSearch]=useState("");
 
 return(
 
-
 <section
 
 style={{
 
-background:"linear-gradient(135deg,#f8fafc,#eff6ff)",
+height:"100vh",
 
-padding:"100px 0"
+background:
+"linear-gradient(135deg,#020617,#0f172a,#1e3a8a)",
+
+padding:"120px 0",
+
+position:"sticky",
+
+top:"0",
+
+zIndex:"1",
+
+overflow:"hidden"
 
 }}
 
 >
 
 
-<div className="container">
+
+{/* Background Glow */}
+
+<div
+
+style={{
+
+position:"absolute",
+
+width:"350px",
+
+height:"350px",
+
+borderRadius:"50%",
+
+background:"#2563eb",
+
+filter:"blur(150px)",
+
+right:"5%",
+
+top:"20%",
+
+opacity:.5
+
+}}
+
+></div>
+
+
+
+
+
+
+
+<div className="container position-relative">
+
 
 
 <div className="row align-items-center">
 
 
 
-{/* LEFT */}
+
+
+{/* LEFT SIDE */}
 
 <div className="col-lg-6">
+
 
 
 <span
 
 style={{
 
-color:"#2563eb",
+padding:"10px 22px",
+
+borderRadius:"40px",
+
+background:"rgba(255,255,255,.12)",
+
+color:"#93c5fd",
 
 fontWeight:"700",
 
@@ -50,9 +105,11 @@ letterSpacing:"2px"
 
 >
 
-TRADEZEN SUPPORT
+⚡︎ TRADEZEN SUPPORT
 
 </span>
+
+
 
 
 
@@ -64,27 +121,28 @@ style={{
 
 fontSize:"clamp(3rem,7vw,5rem)",
 
-fontWeight:"800",
+fontWeight:"900",
 
-color:"#0f172a",
+color:"white",
 
 lineHeight:"1",
 
-marginTop:"20px"
+marginTop:"30px"
 
 }}
 
 >
 
-
-Need help with
+Trade Smarter.
 
 <br/>
 
-your trading?
+Support Faster.
 
 
 </h1>
+
+
 
 
 
@@ -96,17 +154,18 @@ style={{
 
 fontSize:"20px",
 
-color:"#64748b",
+color:"#cbd5e1",
 
-margin:"30px 0"
+margin:"35px 0",
+
+lineHeight:"1.7"
 
 }}
 
 >
 
-
-Find answers, learn trading tools,
-or connect with our support team anytime.
+Find solutions for trading issues, manage your account,
+and connect with experts instantly.
 
 
 </p>
@@ -118,26 +177,33 @@ or connect with our support team anytime.
 
 
 
-{/* SEARCH */}
+
+{/* Search */}
 
 <div
 
 style={{
 
-background:"white",
+background:"rgba(255,255,255,.15)",
 
-borderRadius:"50px",
+border:"1px solid rgba(255,255,255,.25)",
+
+backdropFilter:"blur(20px)",
+
+borderRadius:"60px",
 
 padding:"12px",
 
 display:"flex",
 
 boxShadow:
-"0 20px 60px rgba(37,99,235,.15)"
+"0 25px 80px rgba(0,0,0,.25)"
 
 }}
 
 >
+
+
 
 
 <input
@@ -146,7 +212,7 @@ value={search}
 
 onChange={(e)=>setSearch(e.target.value)}
 
-placeholder="Search stocks, orders, account issues..."
+placeholder="Search orders, stocks, payments..."
 
 style={{
 
@@ -156,22 +222,43 @@ outline:"none",
 
 flex:1,
 
-padding:"10px 20px"
+background:"transparent",
+
+color:"white",
+
+padding:"12px 20px"
 
 }}
-
 
 />
 
 
 
+
+
+
 <button
 
-className="btn btn-primary rounded-pill px-4"
+style={{
+
+border:"none",
+
+borderRadius:"40px",
+
+padding:"12px 35px",
+
+fontWeight:"700",
+
+background:
+"linear-gradient(135deg,#3b82f6,#8b5cf6)",
+
+color:"white"
+
+}}
 
 >
 
-Search
+Search →
 
 </button>
 
@@ -183,6 +270,7 @@ Search
 
 
 
+
 </div>
 
 
@@ -193,82 +281,149 @@ Search
 
 
 
-
-{/* RIGHT */}
+{/* RIGHT SIDE */}
 
 <div className="col-lg-6 mt-5 mt-lg-0">
 
 
+
 <div
+
+className="hero-card"
 
 style={{
 
-background:"white",
+background:"rgba(255,255,255,.12)",
 
-borderRadius:"30px",
+backdropFilter:"blur(25px)",
 
-padding:"35px",
+border:"1px solid rgba(255,255,255,.2)",
+
+borderRadius:"35px",
+
+padding:"45px",
 
 boxShadow:
-"0 30px 80px rgba(37,99,235,.15)"
+"0 30px 100px rgba(0,0,0,.35)",
+
+transition:".4s"
 
 }}
 
 >
 
 
-<h4>
 
-⚡ Support Performance
+
+
+<h4
+
+style={{
+
+color:"white",
+
+fontWeight:"800"
+
+}}
+
+>
+
+ Support Analytics
 
 </h4>
 
 
-<hr/>
+
+<hr style={{color:"white"}}/>
 
 
 
 
-<h2>
 
-24/7
+
+
+
+{
+
+[
+
+["24/7","Market assistance"],
+["2 min","Average response time"],
+["1M+","Active TradeZen users"]
+
+].map((data,index)=>(
+
+
+
+<div
+
+key={index}
+
+style={{
+
+marginTop:"30px",
+
+padding:"20px",
+
+borderRadius:"22px",
+
+background:"rgba(255,255,255,.10)"
+
+}}
+
+>
+
+
+
+<h2
+
+style={{
+
+color:"#60a5fa",
+
+fontWeight:"900"
+
+}}
+
+>
+
+{data[0]}
 
 </h2>
 
-<p>
 
-Market assistance available
+
+
+<p
+
+style={{
+
+color:"#e2e8f0",
+
+margin:0
+
+}}
+
+>
+
+{data[1]}
 
 </p>
 
 
 
-<h2>
 
-2 min
-
-</h2>
-
-<p>
-
-Average response time
-
-</p>
+</div>
 
 
 
+))
 
-<h2>
 
-1M+
+}
 
-</h2>
 
-<p>
 
-TradeZen community members
-
-</p>
 
 
 
@@ -282,11 +437,42 @@ TradeZen community members
 
 
 
-
 </div>
 
 
 </div>
+
+
+
+
+
+
+<style>
+
+{`
+
+.hero-card:hover{
+
+transform:
+translateY(-15px);
+
+box-shadow:
+0 40px 120px rgba(37,99,235,.35)!important;
+
+
+}
+
+
+input::placeholder{
+
+color:#cbd5e1;
+
+}
+
+`}
+
+</style>
+
 
 
 
@@ -297,7 +483,6 @@ TradeZen community members
 
 
 }
-
 
 
 export default Hero;

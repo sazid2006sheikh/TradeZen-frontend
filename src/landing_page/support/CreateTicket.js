@@ -29,12 +29,27 @@ function RaiseTicket() {
   return (
 
     <section
-      style={{
-        minHeight:"100vh",
-        padding:"100px 0",
-        background:
-        "linear-gradient(135deg,#eef2ff,#ffffff,#f8fafc)"
-      }}
+
+    style={{
+
+    height:"100vh",
+
+    padding:"100px 0",
+
+    background:
+    "linear-gradient(135deg,#ffffff,#eff6ff)",
+
+    position:"relative",
+
+    zIndex:"10",
+
+    borderRadius:"50px 50px 0 0",
+
+    boxShadow:
+    "0 -50px 120px rgba(0,0,0,.35)"
+
+    }}
+
     >
 
 
