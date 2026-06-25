@@ -1,224 +1,329 @@
 import React from "react";
 
+function RaiseTicket() {
 
-function RaiseTicket(){
+  const tickets = [
+    {
+      icon: "⚠︎",
+      title: "Trading Issue",
+      desc: "Get instant support for orders, charts, positions and portfolio related problems.",
+      color: "#3b82f6"
+    },
 
+    {
+      icon: "ⓘ",
+      title: "Payment Issue",
+      desc: "Resolve deposits, withdrawals and transaction related queries securely.",
+      color: "#22c55e"
+    },
 
-const tickets=[
+    {
+      icon: "🔒︎",
+      title: "Account Security",
+      desc: "Manage login issues, verification, profile and security settings.",
+      color: "#ef4444"
+    }
+  ];
 
 
-{
-icon:"📈",
-title:"Trading Issue",
-desc:"Orders, charts, positions and portfolio support."
-},
+  return (
 
+    <section
+      style={{
+        minHeight:"100vh",
+        padding:"100px 0",
+        background:
+        "linear-gradient(135deg,#eef2ff,#ffffff,#f8fafc)"
+      }}
+    >
 
-{
-icon:"💳",
-title:"Payment Issue",
-desc:"Deposits, withdrawals and transaction help."
-},
 
+      <div className="container">
 
-{
-icon:"🔐",
-title:"Account Security",
-desc:"Login, verification and profile settings."
-}
 
+        {/* Heading */}
 
-];
+        <div className="text-center mb-5">
 
+          <span
+            style={{
+              background:"#dbeafe",
+              color:"#2563eb",
+              padding:"8px 20px",
+              borderRadius:"30px",
+              fontWeight:"600"
+            }}
+          >
+            Support Center
+          </span>
 
 
-return(
+          <h1
+            className="mt-4"
+            style={{
+              fontWeight:"900",
+              fontSize:"45px",
+              color:"#020617"
+            }}
+          >
 
-<section
+            Raise a Ticket
 
-style={{
+          </h1>
 
-padding:"100px 0",
 
-background:"#fff"
+          <p
+            style={{
+              color:"#64748b",
+              fontSize:"18px"
+            }}
+          >
 
-}}
+          Select your issue category and our experts will assist you.
 
->
+          </p>
 
 
-<div className="container">
+        </div>
 
 
-<div className="text-center mb-5">
 
 
-<h1
 
-style={{
 
-fontWeight:"800",
+        {/* Cards */}
 
-color:"#0f172a"
+        <div className="row g-4">
 
-}}
 
->
+        {
 
-Raise a Ticket
 
-</h1>
+        tickets.map((item,index)=>(
 
 
-<p
+          <div 
+            className="col-md-4"
+            key={index}
+          >
 
-style={{
 
-color:"#64748b"
 
-}}
+          <div
 
->
+          className="ticket-card"
 
-Choose your issue and our specialists will connect with you.
 
-</p>
+          style={{
 
+            height:"100%",
+            padding:"40px",
 
-</div>
+            borderRadius:"28px",
 
 
+            background:
+            "rgba(255,255,255,.75)",
 
 
+            backdropFilter:"blur(20px)",
 
 
+            border:
+            "1px solid rgba(255,255,255,.8)",
 
 
+            boxShadow:
+            "0 25px 80px rgba(15,23,42,.10)",
 
-<div className="row g-4">
 
+            transition:
+            "all .35s ease",
 
-{
 
+            cursor:"pointer"
 
-tickets.map((item,index)=>(
 
+          }}
 
-<div
 
-className="col-md-4"
+          >
 
-key={index}
 
->
 
 
-<div
+          <div
 
-style={{
+          style={{
 
-height:"100%",
+            width:"75px",
+            height:"75px",
 
-padding:"35px",
+            display:"flex",
+            alignItems:"center",
+            justifyContent:"center",
 
-borderRadius:"25px",
+            borderRadius:"22px",
 
-background:"#f8fafc",
+            background:item.color,
 
-boxShadow:
-"0 20px 60px rgba(0,0,0,.06)",
+            color:"#fff",
 
-transition:".3s"
+            fontSize:"35px",
 
-}}
+            boxShadow:
+            `0 15px 40px ${item.color}55`
 
->
+          }}
 
+          >
 
+          {item.icon}
 
-<div
+          </div>
 
-style={{
 
-fontSize:"40px"
 
-}}
 
->
 
-{item.icon}
 
-</div>
+          <h3
 
+          className="mt-4"
 
 
+          style={{
 
+            fontWeight:"800",
 
-<h3 className="mt-4">
+            color:"#0f172a"
 
-{item.title}
 
-</h3>
+          }}
 
+          >
 
 
+          {item.title}
 
-<p
 
-style={{
+          </h3>
 
-color:"#64748b"
 
-}}
 
->
 
-{item.desc}
 
-</p>
 
+          <p
 
+          style={{
 
+            color:"#64748b",
 
+            lineHeight:"1.7"
 
-<button
+          }}
 
-className="btn btn-outline-primary rounded-pill px-4"
+          >
 
->
 
-Create Ticket
+          {item.desc}
 
-</button>
 
+          </p>
 
 
-</div>
 
 
 
-</div>
 
 
-))
+          <button
 
 
-}
+          style={{
 
 
+            marginTop:"20px",
 
-</div>
+            border:"none",
 
+            padding:"12px 28px",
 
-</div>
 
+            borderRadius:"50px",
 
 
-</section>
+            background:
+            "#2563eb",
 
 
-)
+            color:"#fff",
 
+            fontWeight:"700",
+
+
+            boxShadow:
+            "0 10px 25px rgba(37,99,235,.3)"
+
+
+          }}
+
+
+          >
+
+          Create Ticket →
+
+          </button>
+
+
+
+
+
+          </div>
+
+
+
+          </div>
+
+
+        ))
+
+
+        }
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+      <style>
+
+      {`
+
+      .ticket-card:hover{
+
+        transform:translateY(-15px) scale(1.02);
+
+        box-shadow:
+        0 35px 100px rgba(15,23,42,.18)!important;
+
+      }
+
+      `}
+
+      </style>
+
+
+
+    </section>
+
+  )
 
 }
 
